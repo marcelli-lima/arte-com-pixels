@@ -1,9 +1,9 @@
 window.onload = function() {
   const color = document.getElementsByClassName("color")
   color[0].style.background = "black"
-  color[1].style.background = "red"
-  color[2].style.background = "blue"
-  color[3].style.background = "purple"
+  color[1].style.background = '#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+  color[2].style.background = '#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+  color[3].style.background = '#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
 
   function handleChangeSelected(event) {
     const select = document.getElementsByClassName("selected")[0]
@@ -12,7 +12,7 @@ window.onload = function() {
   }
   const colorPalette = document.getElementById("color-palette")
   colorPalette.addEventListener('click', handleChangeSelected);
-}
+
 
 const pixel = document.querySelector("#pixel-board");
 pixel.addEventListener('click', paintPixel);
@@ -32,3 +32,31 @@ function clearTable() {
   }
 }
 
+const board = document.getElementById("generate-board")
+
+
+board.addEventListener("click", function() {
+let input = document.getElementById("board-size")
+if (input.value === "") {
+  alert("Board inválido!")
+}
+let boardSize;
+if (input.value < 5) {
+  boardSize = 5;
+} else if (input.value > 50) {
+  boardSize = 50;
+} else {
+  boardSize = input.value;
+}
+for (let linIndex = 0; linIndex < boardSize; linIndex += 1) {
+  let line = document.createElement('tr');
+  pixel.appendChild(line);
+  for (let colIndex = 0; colIndex < boardSize; colIndex += 1) {
+    let column = document.createElement('td');
+    column.className = 'pixel';
+    line.appendChild(column);
+  }
+}
+
+})
+} 
