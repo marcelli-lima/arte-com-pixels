@@ -1,0 +1,10 @@
+.color {
+  border: solid 1px black;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+} 
+
+.pixel {
+  background-color: white;
+} 
