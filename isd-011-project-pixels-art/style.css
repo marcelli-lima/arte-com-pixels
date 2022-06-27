@@ -1,3 +1,11 @@
+body {
+  text-align: center
+}
+
+table {
+  margin:auto;
+}
+
 .color {
   border: solid 1px black;
   display: inline-block;
