@@ -34,12 +34,24 @@ function clearTable() {
 
 const board = document.getElementById("generate-board")
 
+function removeTable() {
+  const lines = document.querySelectorAll('tr');
+  const columns = document.querySelectorAll('td');
+  for (let linIndex = 0; linIndex < lines.length; linIndex += 1) {
+    lines[linIndex].remove();
+    for (let colIndex = 0; colIndex < columns.length; colIndex += 1) {
+      columns[colIndex].remove();
+    }
+  }
+}
 
 board.addEventListener("click", function() {
 let input = document.getElementById("board-size")
 if (input.value === "") {
   alert("Board inválido!")
 }
+if (input.value !== '') {
+  removeTable();
 let boardSize;
 if (input.value < 5) {
   boardSize = 5;
@@ -57,6 +69,6 @@ for (let linIndex = 0; linIndex < boardSize; linIndex += 1) {
     line.appendChild(column);
   }
 }
-
+}
 })
 } 
