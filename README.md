@@ -31,12 +31,11 @@
 
 ## 🛠 Tecnologias
 
+ <img align="center" alt="Celi-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> HTML
 
-<img src="https://image.flaticon.com/icons/png/512/732/732212.png" width="20" height="16" /> HTML
+ <img align="center" alt="Celi-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> CSS
 
-<img src="https://www.pinclipart.com/picdir/middle/175-1759459_eng-a-med-kamel-frameworks-css-css-logo.png" width="20" height="18" /> CSS
-
-<img src="https://www.kindpng.com/picc/m/67-678384_transparent-javascript-icon-png-png-download.png" width="16" height="16" /> &nbsp;JavaScript
+ <img align="center" alt="Celi-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> JavaScript
 
 
 https://user-images.githubusercontent.com/87941765/176240005-f24e0ead-2e75-4e93-88c0-c81925722b60.mp4
