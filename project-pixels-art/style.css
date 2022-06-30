@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+.color {
+  border: solid 1px black;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+} 
+
+.pixel {
+  background-color: white;
+  border: solid 1px black;
+  height: 40px;
+  width: 40px;
+} 
