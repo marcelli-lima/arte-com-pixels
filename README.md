@@ -1,5 +1,8 @@
 # arte-com-pixels
 
+## Esse projeto consiste em um editor de arte com pixels. Ou seja, dada uma paleta de cores gerada aleatoriamente e um quadro composto por pixels definido pela pessoa usuária, você vai permitir que quem usa consiga pintar o que quiser no quadro! 
+
+
 ## 📋 Requisitos Obrigatórios 
 
 ✔️ 1 - Adicione à página o título "Paleta de Cores".
